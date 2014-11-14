@@ -1,0 +1,54 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "1dd654f49a57d5b2a0d3af003bcd0280",
+    "packages": [
+        {
+            "name": "renereed1/Framework",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/renereed1/Framework.git",
+                "reference": "3f38baab12ba64941b3695493c66481c78821196"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/renereed1/Framework/zipball/3f38baab12ba64941b3695493c66481c78821196",
+                "reference": "3f38baab12ba64941b3695493c66481c78821196",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Salestream\\Framework": "src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Ricky Reed",
+                    "email": "renereed1@gmail.com"
+                }
+            ],
+            "support": {
+                "source": "https://github.com/renereed1/Framework/tree/master",
+                "issues": "https://github.com/renereed1/Framework/issues"
+            },
+            "time": "2014-11-13 19:21:40"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "renereed1/framework": 20
+    },
+    "prefer-stable": false,
+    "platform": [],
+    "platform-dev": []
+}
