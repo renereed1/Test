@@ -14,5 +14,10 @@
             "type": "vcs",
             "url": "git://github.com/renereed1/Framework.git"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "Salestream\\Controller\\": "app/controllers"
+        }
+    }
 }
