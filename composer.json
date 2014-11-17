@@ -17,7 +17,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "Salestream\\Controller\\": "app/controllers"
+            "Salestream\\Controller\\": "app/controllers",
+            "Salestream\\Model\\": "app/models"
         }
     }
 }
