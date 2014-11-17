@@ -4,7 +4,7 @@ return array(
     'namespace' => 'Salestream\\Controller',
     'database' => array(
         'host' => '127.0.0.1',
-        'db' => 'salestream',
+        'db' => 'mycomments',
         'user' => 'root',
         'pass' => ''
     ),
