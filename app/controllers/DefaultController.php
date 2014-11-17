@@ -11,6 +11,7 @@ class DefaultController extends Controller
     
     public function __construct()
     {
+        parent::__construct();
         $this->commentRepository = new CommentRepositoryImpl();
     }
     
