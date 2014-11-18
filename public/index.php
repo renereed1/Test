@@ -8,10 +8,4 @@ use Salestream\Framework\Application;
 
 $application = new Application(require 'app/config/application.config.php');
 
-try
-{
-    $application->run();
-} catch (\Exception $e)
-{
-    echo $e->getMessage();
-}
+$application->run();
