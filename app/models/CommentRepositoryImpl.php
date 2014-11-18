@@ -25,7 +25,7 @@ class CommentRepositoryImpl extends Database implements CommentRepository
     
     public function findAll()
     {
-        $sql = "SELECT * FROM comments";
+        $sql = "SELECT * FROM comments ORDER BY id DESC";
         $query = $this->getHandler()->prepare($sql);
         $query->execute();
         $results = $query->fetchAll();

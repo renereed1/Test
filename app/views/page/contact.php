@@ -34,45 +34,18 @@
                 </div>
                 <div id="navbar" class="collapse navbar-collapse pull-right">
                         <ul class="nav navbar-nav">
-                        <li class="active"><a href="/">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li><a href="/page/about">About</a></li>
-                        <li><a href="/page/contact">Contact</a></li>
+                        <li class="active"><a href="/page/contact">Contact</a></li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
         </nav>
         <div class="container">
-            <div>
-                <form action="/comments" method="post" id="commentForm">
-                    <div>
-                        <label for="name">Name</label><br>
-                        <input type="text" name="name" id="form-name" required>
-                    </div>
-
-                    <div>
-                        <label for="comment">Comment</label><br>
-                        <textarea name="comment" required id="form-comment"></textarea>
-                    </div>
-
-                    <div>
-                        <input type="submit" value="Create Comment" class="btn btn-primary">
-                    </div>
-                </form>
-            </div>
-            <div>
-                <h2>Comments</h2>
-                <div id="comment-list">
-                <?php
-                foreach ($comments as $comment) { ?>
-                     <div id="comment-<?php echo $comment->getId(); ?>">
-                         <hr>
-                         <a href="#" class="btn btn-danger delete" id="comment-<?php echo $comment->getId(); ?>">Remove</a>
-                         <h4><?php echo htmlentities($comment->getName()); ?></h4>
-                         <p><?php echo htmlentities($comment->getComment()); ?></p>
-                    </div>
-                <?php }?>
-                </div>
-            </div>
+           
+            <h1>Contact Us</h1>
+            <hr>
+            <p>Contact information, and maybe a map.</p>
         </div><!-- /.container -->
         <!-- JavaScript -->
         <script src="/js/libs/jquery-1.11.1.min.js"></script>
