@@ -55,7 +55,6 @@ return array(
             'method' => 'GET',
             'controller' => 'default',
             'action' => 'index',
-            'default' => true,
             'type' => 'static'
         ),
         array(

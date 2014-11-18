@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/renereed1/Framework.git",
-                "reference": "a72657ecdeaa779744678263d745ce9c40a00f7f"
+                "reference": "c5bc33c16058e61fb8483c78edf7f4d67d9b10cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/renereed1/Framework/zipball/a72657ecdeaa779744678263d745ce9c40a00f7f",
-                "reference": "a72657ecdeaa779744678263d745ce9c40a00f7f",
+                "url": "https://api.github.com/repos/renereed1/Framework/zipball/c5bc33c16058e61fb8483c78edf7f4d67d9b10cd",
+                "reference": "c5bc33c16058e61fb8483c78edf7f4d67d9b10cd",
                 "shasum": ""
             },
             "require-dev": {
@@ -39,7 +39,7 @@
                 "source": "https://github.com/renereed1/Framework/tree/master",
                 "issues": "https://github.com/renereed1/Framework/issues"
             },
-            "time": "2014-11-17 19:21:42"
+            "time": "2014-11-18 21:13:20"
         }
     ],
     "packages-dev": [],
