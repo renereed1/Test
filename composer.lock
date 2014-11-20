@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d5911c8ec2359a240287ab4d0fd9867b",
+    "hash": "55e7df06ad08b6a6a68283c314bebbe2",
     "packages": [
         {
             "name": "renereed1/Framework",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/renereed1/Framework.git",
-                "reference": "c5bc33c16058e61fb8483c78edf7f4d67d9b10cd"
+                "reference": "25ff0757978c4437e1394332c0add79462ca96d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/renereed1/Framework/zipball/c5bc33c16058e61fb8483c78edf7f4d67d9b10cd",
-                "reference": "c5bc33c16058e61fb8483c78edf7f4d67d9b10cd",
+                "url": "https://api.github.com/repos/renereed1/Framework/zipball/25ff0757978c4437e1394332c0add79462ca96d2",
+                "reference": "25ff0757978c4437e1394332c0add79462ca96d2",
                 "shasum": ""
             },
             "require-dev": {
@@ -39,7 +39,7 @@
                 "source": "https://github.com/renereed1/Framework/tree/master",
                 "issues": "https://github.com/renereed1/Framework/issues"
             },
-            "time": "2014-11-18 21:13:20"
+            "time": "2014-11-18 23:41:14"
         }
     ],
     "packages-dev": [],

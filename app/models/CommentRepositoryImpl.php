@@ -20,7 +20,7 @@ class CommentRepositoryImpl extends Database implements CommentRepository
             ':comment' => $comment->getComment()
         ));
         
-        return $this->getHandler()->lastInsertId();;
+        return $this->getHandler()->lastInsertId();
     }
     
     public function findAll()
@@ -28,14 +28,10 @@ class CommentRepositoryImpl extends Database implements CommentRepository
         $sql = "SELECT * FROM comments ORDER BY id DESC";
         $query = $this->getHandler()->prepare($sql);
         $query->execute();
-        $results = $query->fetchAll();
         
-        $comments = [];
-        foreach ($results as $result)
-        {
-            $comment = new Comment($result['name'], $result['comment'], $result['id']);
-            array_push($comments, $comment);
-        }
+        $query->setFetchMode(\PDO::FETCH_CLASS|\PDO::FETCH_PROPS_LATE, 'Salestream\\Model\\Comment');
+        $comments = $query->fetchAll();
+        
         return $comments;
     }
     
@@ -47,13 +43,10 @@ class CommentRepositoryImpl extends Database implements CommentRepository
             ':id' => $id
         ));
         
-        $result = $query->fetch();
+        $query->setFetchMode(\PDO::FETCH_CLASS|\PDO::FETCH_PROPS_LATE, 'Salestream\\Model\\Comment');
+        $comment = $query->fetch();
         
-        if (is_array($result))
-        {
-            return new Comment($result['name'], $result['comment'], $result['id']);
-        }
-        return null;
+        return $comment;
     }
     
     public function delete($id)
