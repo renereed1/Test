@@ -14,64 +14,56 @@ return array(
             'url' => '/comments',
             'method' => 'POST',
             'controller' => 'comment',
-            'action' => 'create',
-            'type' => 'static'
+            'action' => 'create'
         ),
         array(
             'name' => 'comments',
             'url' => '/comments',
             'method' => 'GET',
             'controller' => 'comment',
-            'action' => 'index',
-            'type' => 'static'
+            'action' => 'index'
         ),
         array(
             'name' => 'get_comment',
             'url' => '/comments/{:id}',
             'method' => 'GET',
             'controller' => 'comment',
-            'action' => 'show',
-            'type' => 'dynamic'
+            'action' => 'show'
         ),
         array(
             'name' => 'update_comment',
             'url' => '/comments/{:id}',
             'method' => 'PUT',
             'controller' => 'comment',
-            'action' => 'update',
-            'type' => 'dynamic'
+            'action' => 'update'
         ),
         array(
             'name' => 'delete_comment',
             'url' => '/comments/{:id}',
             'method' => 'DELETE',
             'controller' => 'comment',
-            'action' => 'delete',
-            'type' => 'dynamic'
+            'action' => 'delete'
         ),
         array(
             'name' => 'home',
             'url' => '/',
             'method' => 'GET',
             'controller' => 'default',
-            'action' => 'index',
-            'type' => 'static'
+            'action' => 'index'
         ),
         array(
             'name' => 'contact',
             'url' => '/page/contact',
             'method' => 'GET',
             'controller' => 'page',
-            'action' => 'contact',
-            'type' => 'static'
+            'action' => 'contact'
         ),
         array(
             'name' => 'about',
             'url' => '/page/about',
             'method' => 'GET',
             'controller' => 'page',
-            'action' => 'about',
-            'type' => 'static'
+            'action' => 'about'
         ),
     ),
     'path_to_views' => __DIR__ . '/../views'
